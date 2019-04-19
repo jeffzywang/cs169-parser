@@ -1,6 +1,12 @@
 class Xfile < ActiveRecord::Base
+  require 'crack' # XML and JSON parsingrequire 'crack/json' # Only JSON parsing
+  require 'crack/xml' # Only XML parsing
+  require 'json'
   attr_accessible :name, :content
 
+  def self.get_properties_from_string(h)
+    return self.get_properties(eval(h))
+  end
   def self.get_properties(h)
     new_array = []
     if h.is_a?(Hash)

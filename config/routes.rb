@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
 
   resources :xfiles do
-    collection do
-      get'shared_props'
-    end
+    # collection do
+    #   get'shared_props'
+    # end
   end
 
   post 'xfiles/edit_post/:id' => 'xfiles#edit_post', as: 'edit_post'
-  get'xfiles/shared_props' => 'xfiles#shared_props'
+  get'xfiles/shared_props/xfile_id' => 'xfiles#shared_props', as: 'shared_props'
 
   get 'xfiles/download_xfile/:id/', to: "xfiles#download_xfile", as: 'download_xfile'
 

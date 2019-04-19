@@ -5,7 +5,7 @@
     Uploaded Files
   </div>
   <table id="jsonfiles">
-    <%= form_tag xfiles_shared_props_path,:id => "xfile_form", :method => :get do %>
+    <%= form_tag shared_props_path,:id => "xfile_form", :method => :get do %>
     <tbody>
       <% @xfiles.each do |xfile| %>
         <tr class="drop-shadow">

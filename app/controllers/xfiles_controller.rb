@@ -100,8 +100,8 @@ class XfilesController < ApplicationController
       prop_sets = []
       xfile_ids.each do |id|
         current_xfile = Xfile.find(id.to_i)
-        content = eval(current_xfile.content)
-        properties = Xfile.get_properties(content)
+        content = current_xfile.content
+        properties = Xfile.get_properties_from_string(content)
         prop_sets.push(properties)
       end
       @shared_set = prop_sets[0]

@@ -4924,3 +4924,837 @@ Processing by XfilesController#show as HTML
   [1m[36mXfile Load (0.2ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
   Rendered xfiles/show.html.erb within layouts/application (3.4ms)
 Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-18 22:40:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:40:01 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.4ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (38.3ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `xfiles_shared_props_path' for #<#<Class:0x007fe601cc0cd8>:0x007fe6030dc2a8>):
+     5:     Uploaded Files
+     6:   </div>
+     7:   <table id="jsonfiles">
+     8:     <%= form_tag xfiles_shared_props_path,:id => "xfile_form", :method => :get do %>
+     9:     <tbody>
+    10:       <% @xfiles.each do |xfile| %>
+    11:         <tr class="drop-shadow">
+  app/views/xfiles/index.html.erb:8:in `_app_views_xfiles_index_html_erb___4486528390515122816_70312885997980'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.0ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (189.0ms)
+
+
+Started GET "/" for ::1 at 2019-04-18 22:40:01 -0700
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:40:01 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `xfiles_shared_props_path' for #<#<Class:0x007fe601cc0cd8>:0x007fe5fe2031b8>):
+     5:     Uploaded Files
+     6:   </div>
+     7:   <table id="jsonfiles">
+     8:     <%= form_tag xfiles_shared_props_path,:id => "xfile_form", :method => :get do %>
+     9:     <tbody>
+    10:       <% @xfiles.each do |xfile| %>
+    11:         <tr class="drop-shadow">
+  app/views/xfiles/index.html.erb:8:in `_app_views_xfiles_index_html_erb___4486528390515122816_70312885997980'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.2ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.4ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:41:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.4ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 232ms (Views: 219.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:41:06 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:41:06 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:5:in `eval'
+  app/models/xfile.rb:5:in `eval'
+  app/models/xfile.rb:5:in `get_properties'
+  app/models/xfile.rb:12:in `block in get_properties'
+  app/models/xfile.rb:8:in `each_pair'
+  app/models/xfile.rb:8:in `get_properties'
+  app/controllers/xfiles_controller.rb:103:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.0ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (172.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id" for ::1 at 2019-04-18 22:41:42 -0700
+Processing by XfilesController#shared_props as HTML
+Redirected to http://localhost:3000/xfiles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:41:42 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:41:45 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:41:45 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:5:in `eval'
+  app/models/xfile.rb:5:in `eval'
+  app/models/xfile.rb:5:in `get_properties'
+  app/models/xfile.rb:12:in `block in get_properties'
+  app/models/xfile.rb:8:in `each_pair'
+  app/models/xfile.rb:8:in `get_properties'
+  app/controllers/xfiles_controller.rb:103:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.0ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:42:22 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:42:24 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:42:26 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:42:26 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id" for ::1 at 2019-04-18 22:42:26 -0700
+Processing by XfilesController#shared_props as HTML
+Redirected to http://localhost:3000/xfiles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:42:26 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:42:30 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:43:25 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `get_properties'
+  app/models/xfile.rb:15:in `block in get_properties'
+  app/models/xfile.rb:11:in `each_pair'
+  app/models/xfile.rb:11:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.9ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:45:49 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:9:in `eval'
+  app/models/xfile.rb:9:in `eval'
+  app/models/xfile.rb:9:in `get_properties'
+  app/models/xfile.rb:16:in `block in get_properties'
+  app/models/xfile.rb:12:in `each_pair'
+  app/models/xfile.rb:12:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.0ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (183.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:46:08 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 24.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:09 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:12 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id" for ::1 at 2019-04-18 22:46:12 -0700
+Processing by XfilesController#shared_props as HTML
+Redirected to http://localhost:3000/xfiles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:12 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:12 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:46:14 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:16 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id" for ::1 at 2019-04-18 22:46:56 -0700
+Processing by XfilesController#shared_props as HTML
+Redirected to http://localhost:3000/xfiles
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:56 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.3ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 24.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:56 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:46:58 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `str' for Xfile(id: integer, name: string, content: string):Class
+Did you mean?  store):
+  app/models/xfile.rb:8:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.2ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.8ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:46:58 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (1.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:47:13 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `get_properties'
+  app/models/xfile.rb:15:in `block in get_properties'
+  app/models/xfile.rb:11:in `each_pair'
+  app/models/xfile.rb:11:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (63.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:47:13 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:47:42 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:47:42 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:50:46 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.2ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 25ms (Views: 18.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:50:46 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:51:04 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 27ms (Views: 18.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:51:04 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:51:22 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `type' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:8:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (173.4ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:51:22 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:51:49 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+NoMethodError (undefined method `content' for #<String:0x007fd1e44ab920>
+Did you mean?  concern):
+  app/models/xfile.rb:8:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (163.3ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:51:49 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:52:02 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:52:03 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:52:31 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 32ms (Views: 20.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:52:31 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:53:05 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:53:05 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:54:01 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 35ms (Views: 26.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:54:01 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.3ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:54:19 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 20.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:54:19 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:55:23 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `get_properties'
+  app/models/xfile.rb:16:in `block in get_properties'
+  app/models/xfile.rb:12:in `each_pair'
+  app/models/xfile.rb:12:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (166.1ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:55:23 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:55:51 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 23.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:55:51 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.3ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:56:12 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[35mXfile Load (0.3ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 39ms (Views: 27.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:56:12 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:56:27 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:9:in `eval'
+  app/models/xfile.rb:9:in `eval'
+  app/models/xfile.rb:9:in `get_properties'
+  app/models/xfile.rb:16:in `block in get_properties'
+  app/models/xfile.rb:12:in `each_pair'
+  app/models/xfile.rb:12:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.0ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:56:27 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.4ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 22:59:58 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `riley' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `eval'
+  app/models/xfile.rb:8:in `get_properties'
+  app/models/xfile.rb:16:in `block in get_properties'
+  app/models/xfile.rb:12:in `each_pair'
+  app/models/xfile.rb:12:in `get_properties'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.1ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (188.2ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 22:59:59 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.5ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 23:02:07 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+NameError (undefined local variable or method `hashed_str' for Xfile(id: integer, name: string, content: string):Class):
+  app/models/xfile.rb:12:in `get_properties'
+  app/models/xfile.rb:8:in `get_properties_from_string'
+  app/controllers/xfiles_controller.rb:104:in `block in shared_props'
+  app/controllers/xfiles_controller.rb:101:in `each'
+  app/controllers/xfiles_controller.rb:101:in `shared_props'
+
+
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.0ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.9ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/rileycampbell/.rvm/gems/ruby-2.4.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.2ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 23:02:08 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/xfiles/shared_props/xfile_id?utf8=%E2%9C%93&xfile_id%5B%5D=3&xfile_id%5B%5D=4" for ::1 at 2019-04-18 23:02:42 -0700
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"utf8"=>"✓", "xfile_id"=>["3", "4"]}
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 26ms (Views: 18.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/xfiles" for ::1 at 2019-04-18 23:02:42 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.2ms)
