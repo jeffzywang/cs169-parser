@@ -58,7 +58,7 @@ class XfilesController < ApplicationController
           flash[:notice] = "#{@xfile.name} was successfully created."
         else
           flash[:notice] = "Incompatible file type, please attach a valid file"
-          redirect_to new_xfile_path
+          redirect_to new_xfile_path and return
         end
       end
       redirect_to xfiles_path

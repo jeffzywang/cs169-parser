@@ -5,17 +5,17 @@ Given(/^the following files exist:$/) do |xfiles_table|
 end
 
 When /^(?:|I )upload a json file$/ do
-  attach_file(:content, File.join(RAILS_ROOT, 'features', 'upload-files', 'sample1.json'))
+  attach_file('content[]', File.join(RAILS_ROOT, 'features', 'upload-files', 'sample1.json'))
   click_button "import"
 end
 
 When /^(?:|I )upload a xml file$/ do
-  attach_file(:content, File.join(RAILS_ROOT, 'features', 'upload-files', 'sample2.xml'))
+  attach_file('content[]', File.join(RAILS_ROOT, 'features', 'upload-files', 'sample2.xml'))
   click_button "import"
 end
 
 When /^(?:|I )upload an invalid file$/ do
-  attach_file(:content, File.join(RAILS_ROOT, 'features', 'upload-files', 'sample3.txt'))
+  attach_file('content[]', File.join(RAILS_ROOT, 'features', 'upload-files', 'sample3.txt'))
   click_button "import"
 end
 

@@ -1,0 +1,15 @@
+json1:
+  name: json1
+  content: {"a" : "b"}
+
+empty:
+  name: empty
+  content: {}
+
+simple_nested:
+  name: simple_nested
+  content: {"a": {"b" : "c"}}
+
+complex_nested:
+  name: complex_nested
+  content: {}

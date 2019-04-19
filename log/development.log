@@ -5758,3 +5758,45 @@ Processing by XfilesController#index as HTML
   [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
   Rendered xfiles/index.html.erb within layouts/application (2.3ms)
 Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-04-19 09:18:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/xfiles" for ::1 at 2019-04-19 09:18:47 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.4ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 432ms (Views: 417.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-04-19 09:18:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2019-04-19 09:18:48 -0700
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for ::1 at 2019-04-19 09:18:48 -0700
+
+
+Started GET "/assets/application.self-7c983c96fab5ba82276bc4304a699104f9e2c8e11889b20235b683f898eeac0e.css?body=1" for ::1 at 2019-04-19 09:18:48 -0700
+
+
+Started GET "/xfiles/1" for ::1 at 2019-04-19 09:18:51 -0700
+Processing by XfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered xfiles/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 80ms (Views: 60.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/d3_graph.self-466c5261726807ae4f2de644e3a317bf7ae156cc5be6a3192b6c903008ad0d1b.js?body=1" for ::1 at 2019-04-19 09:18:52 -0700
+
+
+Started GET "/xfiles/3" for ::1 at 2019-04-19 09:19:00 -0700
+Processing by XfilesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mXfile Load (0.7ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered xfiles/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.7ms)
