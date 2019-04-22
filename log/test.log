@@ -638,3 +638,325 @@ Processing by XfilesController#new as HTML
   Rendered xfiles/new.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 224ms (Views: 216.5ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007fab2011ac88 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1700-sc15kc.json>, @original_filename="sample1.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample1.json\"\r\nContent-Type: application/json\r\nContent-Length: 9\r\n">], "commit"=>"import"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "xfiles" ("name", "content") VALUES (?, ?)  [["name", "sample1.json"], ["content", "{\"a\"=>\"b\"}"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/xfiles
+Completed 302 Found in 12ms (ActiveRecord: 1.4ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (1.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "commit"=>"import"}
+Redirected to http://www.example.com/xfiles/new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007fab2096ae10 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1700-p6zll3.xml>, @original_filename="sample2.xml", @content_type="application/xml", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample2.xml\"\r\nContent-Type: application/xml\r\nContent-Length: 125\r\n">], "commit"=>"import"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "xfiles" ("name", "content") VALUES (?, ?)[0m  [["name", "sample2.xml"], ["content", "{\"note\"=>{\"to\"=>\"Tove\", \"from\"=>\"Jani\", \"heading\"=>\"Reminder\", \"body\"=>\"Don't forget me this weekend!\"}}"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/xfiles
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007fab209f2630 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1700-u6snv2.txt>, @original_filename="sample3.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample3.txt\"\r\nContent-Type: text/plain\r\nContent-Length: 28\r\n">], "commit"=>"import"}
+Redirected to http://www.example.com/xfiles/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:04 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 173ms (Views: 166.3ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007f8852b23a90 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1705-121evud.json>, @original_filename="sample1.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample1.json\"\r\nContent-Type: application/json\r\nContent-Length: 9\r\n">], "commit"=>"import"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "xfiles" ("name", "content") VALUES (?, ?)  [["name", "sample1.json"], ["content", "{\"a\"=>\"b\"}"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/xfiles
+Completed 302 Found in 14ms (ActiveRecord: 1.3ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.1ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "commit"=>"import"}
+Redirected to http://www.example.com/xfiles/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007f8856ca4208 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1705-1rpywug.xml>, @original_filename="sample2.xml", @content_type="application/xml", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample2.xml\"\r\nContent-Type: application/xml\r\nContent-Length: 125\r\n">], "commit"=>"import"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "xfiles" ("name", "content") VALUES (?, ?)[0m  [["name", "sample2.xml"], ["content", "{\"note\"=>{\"to\"=>\"Tove\", \"from\"=>\"Jani\", \"heading\"=>\"Reminder\", \"body\"=>\"Don't forget me this weekend!\"}}"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/xfiles
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007f8855e8b158 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1705-a9b8cf.txt>, @original_filename="sample3.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample3.txt\"\r\nContent-Type: text/plain\r\nContent-Length: 28\r\n">], "commit"=>"import"}
+Redirected to http://www.example.com/xfiles/new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:33:29 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 159ms (Views: 151.5ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007ff8304815b8 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1714-1xgawdy.json>, @original_filename="sample1.json", @content_type="application/json", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample1.json\"\r\nContent-Type: application/json\r\nContent-Length: 9\r\n">], "commit"=>"import"}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "xfiles" ("name", "content") VALUES (?, ?)  [["name", "sample1.json"], ["content", "{\"a\"=>\"b\"}"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/xfiles
+Completed 302 Found in 11ms (ActiveRecord: 1.2ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.1ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.2ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "commit"=>"import"}
+Redirected to http://www.example.com/xfiles/new
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007ff83028ec10 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1714-i2949m.xml>, @original_filename="sample2.xml", @content_type="application/xml", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample2.xml\"\r\nContent-Type: application/xml\r\nContent-Length: 125\r\n">], "commit"=>"import"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "xfiles" ("name", "content") VALUES (?, ?)[0m  [["name", "sample2.xml"], ["content", "{\"note\"=>{\"to\"=>\"Tove\", \"from\"=>\"Jani\", \"heading\"=>\"Reminder\", \"body\"=>\"Don't forget me this weekend!\"}}"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/xfiles
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#index as HTML
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT "xfiles".* FROM "xfiles"[0m
+  Rendered xfiles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+Started GET "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#index as HTML
+  [1m[35mXfile Load (0.2ms)[0m  SELECT "xfiles".* FROM "xfiles"
+  Rendered xfiles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Started POST "/xfiles" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "xfile"=>{"name"=>""}, "content"=>[#<ActionDispatch::Http::UploadedFile:0x007ff832c89880 @tempfile=#<Tempfile:/var/folders/pr/bc6whmrx7s1f_0zgvtsv4hy40000gn/T/RackMultipart20190419-1714-1yns704.txt>, @original_filename="sample3.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"content[]\"; filename=\"sample3.txt\"\r\nContent-Type: text/plain\r\nContent-Length: 28\r\n">], "commit"=>"import"}
+Redirected to http://www.example.com/xfiles/new
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Started GET "/xfiles/new" for 127.0.0.1 at 2019-04-19 09:34:14 -0700
+Processing by XfilesController#new as HTML
+  Rendered xfiles/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by XfilesController#shared_props as HTML
+  Parameters: {"xfile_id"=>["1"]}
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered xfiles/shared_props.html.erb within layouts/application (0.3ms)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "xfiles"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "xfiles" ("name", "content", "id") VALUES ('json1', '---
+a: b
+', 83975567)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "xfiles" ("name", "content", "id") VALUES ('empty', '--- {}
+', 684146117)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "xfiles" ("name", "content", "id") VALUES ('simple_nested', '---
+a:
+  b: c
+', 1014134925)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "xfiles" ("name", "content", "id") VALUES ('complex_nested', '--- {}
+', 743945071)[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mXfile Load (0.2ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 83975567]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mXfile Load (0.1ms)[0m  [1mSELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1[0m  [["id", 684146117]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mXfile Load (0.1ms)[0m  SELECT  "xfiles".* FROM "xfiles" WHERE "xfiles"."id" = ? LIMIT 1  [["id", 1014134925]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
