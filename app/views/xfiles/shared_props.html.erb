@@ -6,7 +6,12 @@
   </div>
 
   <div class="label_title">
-    Filename and Content
+    Filename
+    <% @file_names.each do |xfile| %>
+      <div class="prop-button drop-shadow">
+        <%= link_to xfile.name, xfile_path(xfile) %>
+      </div>
+    <% end %>
   </div>
 
   <div class="label_title">
