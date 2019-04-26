@@ -6,7 +6,7 @@ describe Xfile do
   describe 'get properties for json format' do
     it 'gets the right properties' do
       content = Crack::JSON.parse(xfiles(:json1).content)
-      expect(Xfile.get_properties(content)).to eq(['a'])
+      expect(Xfile.get_properties(content)).to eq([['a', 'b']])
     end
 
     it 'returns empty array if no properties in json' do
@@ -16,7 +16,7 @@ describe Xfile do
 
     it 'returns right properties with simple nested json' do
       content = Crack::JSON.parse(xfiles(:simple_nested).content)
-      expect(Xfile.get_properties(content)).to eq(['a', 'b'])
+      expect(Xfile.get_properties(content)).to eq([['b', 'c']])
     end
   end
 

@@ -50,6 +50,19 @@ end
 When(/^I don't upload a file$/) do
   click_button "import"
 end
+When /I check the following file: (.*)/ do |field|
+  page.all('[id^="xfile_"]').each do |el|
+    if el.value != nil
+      within find("#xfile_#{el.value}") do
+        check("xfile_id_")
+      end
+    end
+  end
+end
+
+When /I click Get Shared Properties/ do
+  find('#xfile_form').click
+end
 
 Then(/^I should see the file upload page again$/) do
   visit path_to("file upload page")

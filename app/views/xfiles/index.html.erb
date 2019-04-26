@@ -4,12 +4,12 @@
   <div class="label_title">
     Uploaded Files
   </div>
-  <table id="jsonfiles">
     <%= form_tag shared_props_path,:id => "xfile_form", :method => :get do %>
+    <table id="jsonfiles">
     <tbody>
       <% @xfiles.each do |xfile| %>
         <tr class="drop-shadow">
-          <td>
+          <td id="<%= "xfile_#{xfile.id}".to_s %>">
             <%= check_box_tag 'xfile_id[]', xfile.id -%>
             <%= link_to "More about #{xfile.name}", xfile_path(xfile) %>\
             <%= link_to "Download #{xfile.name}", download_xfile_path(xfile), data: { turbolinks: false } %>
@@ -17,8 +17,8 @@
         </tr>
         <% end %>
     </tbody>
+    </table>
     <% end %>
-  </table>
   <%= link_to 'Get Shared Properties', "", :onclick => "$('#xfile_form').submit()" %>
   <br>
   <%= link_to 'Add new File', new_xfile_path %>

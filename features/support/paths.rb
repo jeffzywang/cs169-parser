@@ -17,6 +17,8 @@ module NavigationHelpers
 
     when /^file upload page$/i
       new_xfile_path()
+    when /^shared properties page$/i
+      shared_props_path()
     when /^products index page$/i
       xfiles_path()
 

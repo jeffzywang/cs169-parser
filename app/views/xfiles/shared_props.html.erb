@@ -21,7 +21,7 @@
   <div class="prop_container">
     <% @shared_set.each do |prop| %>
       <div class="prop-button drop-shadow">
-        <%= prop %>
+        <%= link_to "#{prop}", shared_files_path(prop[0]) %>
       </div>
     <% end %>
   </div>

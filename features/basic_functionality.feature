@@ -29,3 +29,16 @@ Feature: json and xml file upload
      When I upload an invalid file
      Then I should see "Incompatible file type, please attach a valid file"
      And I should see the file upload page again
+
+ Scenario: restrict to movies with 'PG' or 'R' ratings
+  Given I visit the file upload page
+  When I upload a json file
+  Then I should see "was successfully created."
+  When I check the following file: 1
+  When I click Get Shared Properties
+  And I should be sent to the shared properties page
+  # And I press "ratings_submit"
+  # Then I should see "The Incredibles"
+  # And I should see "The Terminator"
+  # And I should not see "Alladin"
+  # And I should not see "The Help"
